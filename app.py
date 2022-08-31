@@ -201,7 +201,7 @@ def getLocationConfirmMessage(title, latitude, longitude):
           "text": f"確認是否搜尋 {title} 附近地點？",
           "actions": [
               {
-                 "type": "postback",
+                 "type": "message",
                "label": "是",
                "data": json.dumps(data)
                },
