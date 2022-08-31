@@ -203,7 +203,7 @@ def getLocationConfirmMessage(title, latitude, longitude):
               {
                  "type": "postback",
                "label": "是",
-               "data": json.dumps(data),
+               "data": json.dumps(data)
                },
               {
                 "type": "message",
