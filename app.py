@@ -389,7 +389,7 @@ def line_login():
             name = content["displayName"]
             userID = content["userId"]
             pictureURL = content["pictureUrl"]
-            statusMessage = content["statusMessage"]
+            statusMessage = content.get("statusMessage", "八嘎鴨肉")
             print(content)
             return render_template('profile.html', name=name, pictureURL=
                                    pictureURL, userID=userID, statusMessage=
